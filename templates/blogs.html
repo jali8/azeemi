@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-indigo-600 mb-6 transition duration-300 transform hover:scale-105">Spiritual Blogs</h2>
+    <p class="mb-8 text-lg">Explore writings on spirituality, divine wisdom, and the teachings of great Sufi masters.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      {% for post in posts|reverse %}
+      <div class="bg-white shadow-lg p-6 rounded-xl transition duration-300 transform hover:scale-[1.03]">
+        <h3 class="text-2xl font-semibold mb-2">{{ post.title }}</h3>
+        <p class="text-gray-600 mb-4">{{ post.description }}</p>
+        <a href="{{ post.url }}" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
+      </div>
+      {% endfor %}
+      
+    </div>
+</div>
+{% endblock %}

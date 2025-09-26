@@ -1,0 +1,96 @@
+/* General body and container styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4c51bf;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #312e81;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    color: #a0aec0;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Background animation keyframes */
+@keyframes glowingBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* FINAL FIX: New class for body background */
+.animated-gradient-body {
+    /* Ensures background covers entire scrollable content */
+    background: linear-gradient(-45deg, #4c51bf, #667eea, #9f7aea, #d53f8c); 
+    background-size: 400% 400%;
+    animation: glowingBackground 15s ease infinite;
+}
+
+.background-animation {
+    background: transparent; 
+}
+
+
+/* New CSS for glowing Thank You text */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #805ad5, 0 0 25px #805ad5, 0 0 30px #805ad5, 0 0 35px #805ad5;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #805ad5, 0 0 50px #805ad5, 0 0 60px #805ad5, 0 0 70px #805ad5;
+    }
+}
+
+.glowing-text {
+    animation: glowing 1.5s ease-in-out infinite alternate;
+}
+
+.interactive-element {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.interactive-element:hover {
+    transform: scale(1.05);
+    color: #fff;
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold text-indigo-600 mb-6 border-b-2 border-indigo-500 pb-2 interactive-element">Audios & Lectures</h1>
+    <p class="text-lg text-gray-600 mb-8">
+        Listen to spiritual lectures, audiobooks, and divine recitations.
+    </p>
+    
+    <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+        <h2 class="text-2xl font-semibold text-indigo-700 mb-2">The Essence of Divine Love</h2>
+        <p class="text-gray-700 mb-4">
+            A powerful lecture on the core principle of spiritual awakening.
+        </p>
+        <audio controls class="w-full">
+            <source src="#" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+    <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+        <h2 class="text-2xl font-semibold text-indigo-700 mb-2">Remembrance of God</h2>
+        <p class="text-gray-700 mb-4">
+            A guided recitation for inner peace and meditation.
+        </p>
+        <audio controls class="w-full">
+            <source src="#" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+{% endblock %}

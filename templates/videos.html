@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold text-indigo-600 mb-6 border-b-2 border-indigo-500 pb-2 interactive-element">Spiritual Videos</h1>
+    <p class="text-lg text-gray-600 mb-8">
+        Watch and listen to divine lectures, recitations, and more from our YouTube channel.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden p-4">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe 
+            src="https://www.youtube.com/embed/videoseries?list=PLz_YMWBBHem8MnsdtlPyuig_sReaH5PrR" 
+            title="Spiritual Teachings Playlist" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen 
+            class="w-full h-full">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden p-4">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe 
+            src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID" 
+            title="Sufi Wisdom Playlist" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen 
+            class="w-full h-full">
+          </iframe>
+        </div>
+      </div>
+      
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden p-4">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe 
+            src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID" 
+            title="Inspirational Lectures" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen 
+            class="w-full h-full">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+</div>
+{% endblock %}
